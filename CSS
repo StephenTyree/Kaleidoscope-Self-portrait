@@ -1,0 +1,233 @@
+@import url(https://fonts.googleapis.com/css?family=Ubuntu:700);
+
+.header{
+	color: white;
+	font-size:30px;
+	font-family: Helvetica, Arial, sans-serif;
+	padding:25px;
+	}
+
+.background{
+	width:1400px;
+	height:10100px;
+	margin-top:20px;
+    margin-left: auto;
+    margin-right: auto;
+	background-color:red;
+	-webkit-animation-name: test ;
+	-webkit-animation-duration:5s;
+	animation-name: test;
+	animation-duration:5s;
+	animation-direction: reverse;
+	animation-iteration-count:infinite;}
+	
+a:link {
+	color:White
+	font-family: Helvetica, Arial, sans-serif;
+	}
+a:visited{
+	font-family:Helvetica;
+	color:white}
+a:active{
+	color:red}
+a:hover{
+	color:#BCFF33;}
+	
+@-webkit-keyframes test{
+  0%  {background-color:#a103af;}/*purple*/
+  20%  {background-color:#9b1212;}/*red*/
+  40%  {background-color:#F38F2B;}/*Orange*/
+  60%  {background-color:#ffaa00;}/*red*/
+  80%  {background-color:#d12d00;}/*Orange2*/
+  100% {background-color:#a103af;}}/*purple*/
+@keyframes test{
+   0%  {background-color:#a103af;}/*purple*/
+  20%  {background-color:#9b1212;}/*red*/
+  40%  {background-color:#F38F2B;}/*Orange*/
+  60%  {background-color:#ffaa00;}/*red*/
+  80%  {background-color:#d12d00;}/*Orange2*/
+  100% {background-color:#a103af;}}/*purple*/
+
+.Block{
+  	clip-path:url(#Block-clip);}
+  	float:"center">
+  	height:300px;
+  	width:1000px;
+  	margin:10px;
+  	padding:20px;
+  	
+.scope1 {
+    height: 1000px;
+    position: relative;
+    margin-top:200px;
+    padding:50px;
+    float:center; 
+    width: 1000px;
+	animation:spinner 40s linear infinite;
+	transition: all 1s ease;}
+.scope {
+    height: 1000px;
+    margin-top:100px;
+    position: relative;
+    float:center; 
+    width: 1000px;
+	animation:spinner 40s linear infinite;
+	transition: all 1s ease;}
+.inner-scope {
+    animation: spin_view 20s linear infinite;
+    border:none;
+    height: 100%;
+    overflow: hidden;
+    position: center;
+    width: 100%;
+   transform-style: preserve-3d;}
+.view {
+    border-radius: 25%;
+    height: 100%;
+    overflow: hidden;
+    perspective: 300px;
+    position: absolute;
+    width: 100%;}
+.opp{
+    background: #000;
+    transform: rotateY(180deg) rotateZ(60deg);}
+.view:not(.opp),
+.opposite,
+.image {
+    backface-visibility: hidden;}
+.opposite {
+    height: 50%;
+    left: 50%;
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    transform-origin: 0% 0%;
+    width: 50%;}
+.opposite:nth-child(1) {
+    transform: rotateZ(0deg) skew(30deg);}
+.opposite:nth-child(2) {
+    transform: rotateZ(120deg) skew(30deg);}
+.opposite:nth-child(3) {
+    transform: rotateZ(240deg) skew(30deg);}
+.image {
+    height: 100%;
+    left: -29%;
+    position: absolute;
+    top: 0;
+    transform-origin: 50% 50%;
+    transform: skew(-30deg);
+    width: 100%;}
+@keyframes spin_view {
+    0% { transform: rotateZ(0) }
+    100% { transform: rotateZ(360deg) }}
+ @keyframes spinner {
+    from { transform: rotate(0deg);    }
+    to   { transform: rotate(360deg) ; }}
+@-webkit-keyframes rotateImage {
+    0% { transform: rotateZ(0); background-position: 50% 44px; }
+    100% { transform: rotateZ(359deg); background-position: 50% -1832px; }}
+@-moz-keyframes rotateImage {
+    0% { transform: rotateZ(0); background-position: 50% 44px; }
+    100% { transform: rotateZ(359deg); background-position: 50% -1832px; }}
+@keyframes rotateImage {
+    0% { transform: rotateZ(0); background-position: 50% 44px; }
+    100% { transform: rotateZ(359deg); background-position: 50% -1832px; }}
+.image .inner {
+    animation: rotateImage 30s linear infinite;
+    background: url("Kaleidoscope/1.jpg") repeat;
+    display: block;
+    height: 1200px;
+    left: -25%;
+    position: absolute;
+    top: -25%;
+    width: 1200px;}
+.image2 .inner2 {
+    animation: rotateImage 30s linear infinite;
+	animation-direction: reverse;
+    background: url("Kaleidoscope/2.jpg") repeat;
+    display: block;
+    height: 1200px;
+    left: -25%;
+    position: absolute;
+    top: -25%;
+    width: 1200px;}
+.image3 .inner3 {
+    animation: rotateImage 30s linear infinite;
+    background: url("Kaleidoscope/3.jpg") repeat;
+    display: block;
+    height: 1200px;
+    left: -25%;
+    position: absolute;
+    top: -25%;
+    width: 1200px;}
+.image4 .inner4 {
+    animation: rotateImage 30s linear infinite;
+    animation-direction: reverse;
+    background: url("Kaleidoscope/4.jpg") repeat;
+    display: block;
+    height: 1200px;
+    left: -25%;
+    position: absolute;
+    top: -25%;
+    width: 1200px;}
+.image5 .inner5 {
+    animation: rotateImage 30s linear infinite;
+    background: url("Kaleidoscope/5.jpg") repeat;
+    display: block;
+    height: 1200px;
+    left: -25%;
+    position: absolute;
+    top: -25%;
+    width: 1200px;}
+.image6 .inner6 {
+    animation: rotateImage 30s linear infinite;
+    animation-direction: reverse;
+    background: url("Kaleidoscope/6.jpg") repeat;
+    display: block;
+    height: 1200px;
+    left: -25%;
+    position: absolute;
+    top: -25%;
+    width: 1200px;}
+.image7 .inner7 {
+    animation: rotateImage 30s linear infinite;
+    background: url("Kaleidoscope/7.jpg") repeat;
+    display: block;
+    height: 1200px;
+    left: -25%;
+    position: absolute;
+    top: -25%;
+    width: 1200px;}
+.image8 .inner8 {
+    animation: rotateImage 30s linear infinite;
+    animation-direction: reverse;
+    background: url("Kaleidoscope/8.jpg") repeat;
+    display: block;
+    height: 1200px;
+    left: -25%;
+    position: absolute;
+    top: -25%;
+    width: 1200px;}
+.image9 .inner9 {
+    animation: rotateImage 30s linear infinite;
+    background: url("Kaleidoscope/9.jpg") repeat;
+    display: block;
+    height: 1200px;
+    left: -25%;
+    position: absolute;
+    top: -25%;
+    width: 1200px;}
+.image10 .inner10 {
+    animation: rotateImage 30s linear infinite;
+    animation-direction: reverse;
+    background: url("Kaleidoscope/10.jpg") repeat;
+    display: block;
+    height: 1200px;
+    left: -25%;
+    position: absolute;
+    top: -25%;
+    width: 1000px;}
+
+html {
+    background-image:linear-gradient(to bottom, hsla(0,0%,0%,1), hsla(255,255%,2%,0.8), hsla(0, 0%, 0%,1)100%);
+    min-height: 100%;}}
